@@ -1,0 +1,92 @@
+/* Base styles */
+.header {
+  background-image: linear-gradient(
+    to right,
+    #e8e7e7,
+    #ffffff 30%
+  );
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /* Keep header sticky */
+  top: 0; /* Ensure it sticks to the top */
+  z-index: 1000; /* Ensure it has a high z-index to stay above other layers */
+  border-bottom: 0.5px solid black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #2563eb,
+    #06b6d4
+  );
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  /* font-weight: 400; */
+}
+
+.nav-item a:hover {
+  color: #2563eb;
+  font-weight: 550;
+  transition: color 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    /* flex-direction: column; Stack header vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Reduce spacing between nav items */
+  }
+
+  .logo {
+    font-size: 1rem; /* Reduce logo font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px; /* Adjust padding */
+  }
+
+  .nav {
+    flex-direction: column; /* Continue stacking vertically */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  .nav-item {
+    margin: 3px 0; /* Reduce spacing further */
+  }
+
+  .logo {
+    font-size: 0.9rem; /* Further reduce logo font size */
+  }
+}

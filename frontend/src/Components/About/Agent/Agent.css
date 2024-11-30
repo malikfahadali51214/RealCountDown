@@ -1,0 +1,83 @@
+/* Base styles for larger screens */
+.agent-class {
+    background-image: linear-gradient(to right, #2563eb, #06b6d4);
+    display: flex; /* Flex layout for aligning items */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center-align text */
+    padding-left: 7rem; /* Add padding to the left */
+    min-height: 60vh; /* Set minimum height to 60% of the viewport */
+  }
+  
+  .agent-text {
+    max-width: 60rem; /* Set a max width for the text section */
+    color: white; /* White text for contrast */
+  }
+  
+  .agent-text h2 {
+    font-size: 3rem; /* Large font size for heading */
+    margin-bottom: 10px; /* Margin below heading */
+  }
+  
+  .agent-text p {
+    padding-right: 4rem; /* Padding to the right */
+  }
+  
+  .agent-text button {
+    margin-top: 2rem; /* Margin above button */
+    height: 3rem; /* Set button height */
+    width: 12rem; /* Set button width */
+  }
+  
+  /* Responsive styles for medium screens (tablets, smaller laptops) */
+  @media (max-width: 768px) {
+    .agent-class {
+      padding-left: 3rem; /* Reduce left padding for smaller screens */
+      justify-content: flex-start; /* Align content to the left */
+    }
+  
+    .agent-text {
+      max-width: 90%; /* Allow more width for the text section */
+      text-align: left; /* Align text to the left */
+    }
+  
+    .agent-text h2 {
+      font-size: 2rem; /* Adjust font size for heading */
+    }
+  
+    .agent-text p {
+      padding-right: 2rem; /* Reduce padding on smaller screens */
+    }
+  
+    .agent-text button {
+      height: 2.5rem; /* Adjust button height */
+      width: 10rem; /* Adjust button width */
+    }
+  }
+  
+  /* Responsive styles for small screens (mobile devices) */
+  @media (max-width: 480px) {
+    .agent-class {
+      padding: 2rem; /* Further reduce padding */
+      min-height: 50vh; /* Reduce minimum height for smaller screens */
+    }
+  
+    .agent-text {
+      max-width: 100%; /* Allow full width */
+      text-align: left; /* Align text to the left */
+    }
+  
+    .agent-text h2 {
+      font-size: 1.5rem; /* Smaller font size for heading */
+    }
+  
+    .agent-text p {
+      padding-right: 1rem; /* Further reduce padding */
+    }
+  
+    .agent-text button {
+      height: 2rem; /* Smaller button height */
+      width: 8rem; /* Smaller button width */
+    }
+  }
+  

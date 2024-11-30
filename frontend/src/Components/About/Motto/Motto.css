@@ -1,0 +1,93 @@
+/* Base styles for larger screens */
+.motto-main {
+    background-image: linear-gradient(
+      to right,
+      #2563eb,
+      #06b6d4
+    );
+    display: flex; /* Use flex layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center-align text */
+    padding-left: 7rem; /* Padding on the left */
+    min-height: 60vh; /* Minimum height */
+  }
+  
+  .motto-text {
+    width: 60rem; /* Fixed width for larger screens */
+    color: white; /* White text for contrast */
+  }
+  
+  .motto-text h2 {
+    font-size: 3rem; /* Large font size for heading */
+    margin-bottom: 10px; /* Space below heading */
+  }
+  
+  .motto-text p {
+    padding-right: 4rem; /* Padding on the right */
+  }
+  
+  .motto-text button { /* Note corrected lowercase 'button' */
+    margin-top: 2rem; /* Space above button */
+    height: 3rem; /* Button height */
+    width: 12rem; /* Button width */
+    background-color: #2563eb;
+  }
+  .motto-text button:hover { 
+    background-color: #2563eb;
+    box-shadow: 0 8px 16px 0 rgba(0, 179, 249, 0.2);
+  }
+  
+  /* Responsive styles for medium screens (tablets, smaller laptops) */
+  @media (max-width: 768px) {
+    .motto-main {
+      padding-left: 3rem; /* Reduce padding on smaller screens */
+      justify-content: flex-start; /* Align content to the left */
+    }
+  
+    .motto-text {
+      width: auto; /* Allow text section to adapt to screen width */
+      text-align: left; /* Align text to the left */
+      padding: 1rem; /* Add padding to the entire section */
+    }
+  
+    .motto-text h2 {
+      font-size: 2rem; /* Reduce font size for heading */
+    }
+  
+    .motto-text p {
+      padding-right: 2rem; /* Reduce padding on the right */
+    }
+  
+    .motto-text button {
+      height: 2.5rem; /* Adjust button height */
+      width: 10rem; /* Adjust button width */
+    }
+  }
+  
+  /* Responsive styles for small screens (mobile devices) */
+  @media (max-width: 480px) {
+    .motto-main {
+      padding: 1rem; /* Further reduce padding */
+      min-height: 50vh; /* Reduce minimum height */
+    }
+  
+    .motto-text {
+      width: 100%; /* Allow full width */
+      text-align: left; /* Align text to the left */
+    }
+  
+    .motto-text h2 {
+      font-size: 1.5rem; /* Smaller font size */
+    }
+  
+    .motto-text p {
+      padding-right: 1rem; /* Further reduce padding */
+    }
+  
+    .motto-text button {
+      height: 2rem; /* Smaller button height */
+      width: 8rem; /* Smaller button width */
+    }
+  }
+  

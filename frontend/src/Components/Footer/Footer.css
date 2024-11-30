@@ -1,0 +1,121 @@
+/* Base styling for footer */
+.footer {
+    background-color: #e8e7e7;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px; 
+    margin-bottom: 0;
+  }
+  
+  .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .icon-link {
+    margin: 0 10px; 
+    color: black;
+    text-decoration: none;
+  }
+  
+  .icon-link:hover {
+    color: #2563eb; 
+    transition: color 0.2s;
+  }
+  
+  .divider {
+    border-top: 1px solid black; 
+    width: 80%;
+    margin: 10px auto; 
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left; 
+    width: 80%;
+    margin: 0 auto; 
+    gap: 10px;
+    padding: 10px; 
+   
+  }
+  
+  .company-info {
+    flex: 1; 
+  }
+  
+  .company-info h3 {
+    font-weight: bold;
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-image: linear-gradient(to right, #2563eb, #06b6d4);
+  }
+  
+  .about-us {
+    flex: 1; 
+  }
+  
+  .contact-info {
+    flex: 1; 
+    text-align: right;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    margin-top: 10px; 
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; 
+      text-align: center; 
+      padding: 20px 10px; 
+    }
+  
+    .divider {
+      width: 90%; 
+    }
+  
+    .icon-link {
+      margin: 5px; 
+    }
+  
+    .company-info,
+    .about-us,
+    .contact-info {
+      margin-bottom: 20px; 
+    }
+  
+    .company-info,
+    .about-us,
+    .contact-info {
+      text-align: center; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 15px; 
+    }
+  
+    .footer-content {
+      padding: 10px; 
+    }
+  
+    .company-info h3 {
+      font-size: 1.1rem; 
+    }
+  
+    .footer-copyright {
+      margin-top: 5px; 
+    }
+  
+    .icon-link {
+      font-size: 1rem; 
+      margin: 3px; 
+    }
+  }
+  

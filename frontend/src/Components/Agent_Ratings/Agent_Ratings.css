@@ -1,0 +1,50 @@
+.all-agents h1{
+    --tw-text-opacity: 1;
+    color: rgb(30 58 138 / var(--tw-text-opacity));
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.all-agents {
+    padding: 20px;
+  }
+  
+  .agentcard-container {
+    display: flex;
+    justify-content: space-between; /* Even spacing between cards */
+    gap: 10px; /* Adjust spacing between cards */
+    flex-wrap: nowrap; /* Ensure cards don't wrap to the next line */
+  }
+  
+  .agentcard {
+    flex: 0 0 18%; /* This ensures 5 cards fit in a single row */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .agentcard-image {
+    width: 100%; /* Make the image fit the card's width */
+    height: 60%; /* Fixed height for consistent image size */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners */
+
+  }
+  
+  .agentcard-heading {
+    font-size: 1.25em;
+    margin: 10px 0;
+  }
+  
+  .agentcard-description {
+    font-size: 0.9em;
+    color: #666; /* Slightly muted color for description */
+  }
+  
+  .agentcard-rating {
+    font-size: 1.2em;
+    color: #2563eb; /* Yellow color for star ratings */
+  }
+  

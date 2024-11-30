@@ -1,0 +1,93 @@
+/* Base styles */
+.hero {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space out content between left and right */
+    align-items: center; /* Align elements vertically */
+    padding: 20px; /* Padding for spacing */
+    background-color: white; /* Light background color for contrast */
+  }
+  
+  .hero-text {
+    /* Allow the text section to occupy available space */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem; /* Large heading */
+    margin-bottom: 10px; /* Space below the heading */
+    text-align: left;
+    color: rgb(30, 58, 138); /* Darker blue for contrast */
+    font-size: 56px;
+  }
+  
+  .hero-text2 {
+    color: transparent; /* Make text transparent */
+    background-clip: text; /* Allow gradient effect within text */
+    -webkit-background-clip: text; /* Chrome, Safari compatibility */
+    -webkit-text-fill-color: transparent; /* Chrome, Safari compatibility */
+    background-image: linear-gradient(
+      to right,
+      #2563eb,
+      #06b6d4
+    ); /* Gradient color for text */
+  }
+  
+  .hero-text p {
+    margin: 10px 0; /* Consistent spacing between paragraphs */
+  }
+  
+  .hero-image {
+    flex: 0 0 600px; /* Fixed width for the image section */
+  }
+  
+  .hero-image img {
+    width: 100%; /* Ensure the image fills the section */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for a softer look */
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start; /* Align content to the left */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .hero-text {
+      text-align: center; /* Center text on smaller screens */
+      margin-bottom: 20px; /* Add spacing between text and image */
+    }
+  
+    .hero-text h1 {
+      font-size: 36px; /* Reduce font size */
+    }
+  
+    .hero-image {
+      flex: 0 0 auto; /* Allow image to adjust to available space */
+      width: 100%; /* Ensure the image fills the width */
+    }
+  
+    .hero-image img {
+      border-radius: 8px; /* Slightly smaller border radius */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 28px; /* Further reduce font size */
+    }
+  
+    .hero {
+      padding: 5px; /* Further reduce padding */
+    }
+  
+    .hero-text p {
+      font-size: 14px; /* Smaller text for better readability */
+    }
+  
+    .hero-image {
+      width: 100%; /* Ensure the image fills the section */
+    }
+  }
+  

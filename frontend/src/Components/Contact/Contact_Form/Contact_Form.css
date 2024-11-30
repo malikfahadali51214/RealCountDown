@@ -1,0 +1,134 @@
+/* Base styles for larger screens */
+.containercontact {
+    min-height: 87vh;
+    background: white;
+    display: flex; /* Flex layout for horizontal alignment */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containercontact .image {
+    flex: 1; /* Image takes half the space */
+    margin-right: 20px;
+  }
+  
+  .containercontact .image img {
+    max-width: 100%; /* Ensure image does not overflow */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .containercontact form {
+    flex: 1; /* Form takes the other half of the space */
+    width: 750px; /* Fixed width for larger screens */
+    height: 400px; /* Set height */
+    display: flex; /* Use flex layout */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center items vertically */
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blur for visual effect */
+    flex-wrap: wrap; /* Wrap content if necessary */
+    background-image: linear-gradient(to right, #06b6d4, #2563eb); /* Gradient background */
+    padding: 20px; /* Padding for inner content */
+  }
+  
+  .containercontact form h1 {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .containercontact form input {
+    color: white;
+    width: 290px; /* Set width */
+    height: 40px; /* Set height */
+    padding-left: 10px; /* Padding inside the input */
+    outline: none; /* No outline on focus */
+    border: none; /* No border */
+    font-size: 15px; /* Font size */
+    background: none; /* No background */
+    border-bottom: 2px solid white; /* Bottom border */
+  }
+  
+  .containercontact form input::placeholder {
+    color: white; /* Placeholder color */
+  }
+  
+  .containercontact form textarea {
+    background: none; /* No background */
+    border: none; /* No border */
+    border-bottom: 2px solid white; /* Bottom border */
+    color: white; /* Text color */
+    font-size: 15px; /* Font size */
+    padding: 10px; /* Padding */
+    outline: none; /* No outline */
+    min-width: 600px; /* Set minimum width */
+    min-height: 80px; /* Set minimum height */
+  }
+  
+  .containercontact form textarea::placeholder {
+    color: white; /* Placeholder color */
+  }
+  
+  .containercontact form #button {
+    background-color: #2563eb;
+    color: white; /* Button text color */
+    height: 40px; /* Button height */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+
+  /* Responsive styles for smaller screens (tablets, smaller laptops) */
+  @media (max-width: 768px) {
+    .containercontact {
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: flex-start; /* Align content to the top */
+    }
+  
+    .containercontact .image {
+      margin-bottom: 20px; /* Add margin between image and form */
+    }
+  
+    .containercontact form {
+      width: 90%; /* Adjust form width for smaller screens */
+      padding: 15px; /* Adjust form padding */
+    }
+  
+    .containercontact form textarea {
+      min-width: 100%; /* Set textarea to full width */
+    }
+  }
+  
+  /* Responsive styles for small screens (mobile devices) */
+  @media (max-width: 480px) {
+    .containercontact {
+      padding: 10px; /* Reduce container padding */
+      justify-content: center; /* Center content */
+    }
+  
+    .containercontact .image {
+      margin-bottom: 10px; /* Add smaller margin */
+    }
+  
+    .containercontact form {
+      width: 100%; /* Full width for mobile screens */
+      padding: 10px; /* Smaller padding */
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); /* Lighter shadow */
+    }
+  
+    .containercontact form input {
+      width: 100%; /* Full width for inputs */
+      margin-bottom: 5px; /* Reduce margin between inputs */
+    }
+  
+    .containercontact form textarea {
+      min-width: 100%; /* Full width for textarea */
+    }
+  
+    .containercontact form #button {
+      width: 100%; /* Full width for button */
+    }
+  }
+  

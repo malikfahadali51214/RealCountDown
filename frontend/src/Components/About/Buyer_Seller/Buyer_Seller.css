@@ -1,0 +1,86 @@
+/* Base styles for larger screens */
+.renterhostess-class {
+    padding: 20px; /* Padding around the container */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between child elements */
+    align-items: center; /* Align vertically in the center */
+    min-height: 84vh; /* Take up full viewport height */
+  }
+  
+  .renterhostess-text {
+    max-width: 50%; /* Limit width of the text section */
+    color: rgb(0, 0, 0); /* Black text color */
+    margin-left: 60px; /* Left margin for spacing */
+  }
+  
+  .renterhostess-text h2 {
+    font-size: 3rem; /* Large font size for heading */
+    margin-bottom: 10px; /* Margin below heading */
+    text-align: center; /* Center the text */
+    color: transparent; /* Transparent text to show gradient */
+    background-clip: text; /* Background clipping for text */
+    -webkit-background-clip: text; /* Compatibility with Chrome, Safari */
+    -webkit-text-fill-color: transparent; /* Chrome, Safari compatibility */
+    background-image: linear-gradient(to right, #2563eb, #06b6d4); /* Gradient for text */
+  }
+  
+  .renterhostess-text p {
+    font-size: 16px; /* Standard font size for paragraph */
+    line-height: 1.5; /* Line spacing for readability */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .renterhostess-img {
+    flex-shrink: 0; /* Prevent image section from shrinking */
+  }
+  
+  .renterhostess-img img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Responsive styles for medium screens (tablets, smaller laptops) */
+  @media (max-width: 768px) {
+    .renterhostess-class {
+      flex-direction: column; /* Stack elements vertically */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .renterhostess-text {
+      max-width: 80%; /* Allow more width for text section */
+      margin-left: 0; /* Reset left margin */
+      text-align: center; /* Center the text on smaller screens */
+    }
+  
+    .renterhostess-text h2 {
+      font-size: 2rem; /* Adjust heading size */
+    }
+  
+    .renterhostess-text p {
+      text-align: center; /* Center paragraphs */
+    }
+  
+    .renterhostess-img {
+      margin-top: 20px; /* Add margin between text and image */
+    }
+  }
+  
+  /* Responsive styles for small screens (mobile devices) */
+  @media (max-width: 480px) {
+    .renterhostess-class {
+      padding: 10px; /* Reduce padding further */
+    }
+  
+    .renterhostess-text {
+      max-width: 100%; /* Allow full width for text */
+    }
+  
+    .renterhostess-text h2 {
+      font-size: 1.5rem; /* Further reduce heading size */
+    }
+  
+    .renterhostess-text p {
+      font-size: 14px; /* Smaller font for paragraphs */
+    }
+  }
+  
